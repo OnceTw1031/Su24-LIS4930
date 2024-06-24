@@ -1,0 +1,21 @@
+from datetime import datetime
+
+
+def print_current_datetime(feet, inches):
+    # Get current date and time
+    datetime_object = datetime.now()
+
+    # Print
+    print(f"Current Date and Time: {datetime_object}")
+
+
+    print(f"Type: {type(datetime_object)}")
+
+    # Example usage of feet and inches arguments
+    print(f"Feet: {feet}, Inches: {inches}")
+
+
+# Example usage:
+feet = 5
+inches = 6
+print_current_datetime(feet, inches)
