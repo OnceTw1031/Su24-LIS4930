@@ -1,0 +1,9 @@
+from datetime import timedelta
+
+# Create a timedelta object
+custom_timedelta = timedelta(days=100, hours=10, minutes=13)
+
+# Print
+print(f"Days: {custom_timedelta.days}")
+print(f"Seconds: {custom_timedelta.seconds}")
+print(f"Microseconds: {custom_timedelta.microseconds}")
