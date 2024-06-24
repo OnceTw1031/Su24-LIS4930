@@ -1,0 +1,26 @@
+import datetime
+
+input_file = 'input.txt'
+
+# Initialize empty list
+input_lines = []
+
+# Read input file
+with open(input_file, 'r') as file:
+    input_lines = file.readlines()
+
+# Process each line of input
+for line in input_lines:
+    # Split the line into components
+    data = line.strip().split()
+
+    # Make sure the input contains exactly 6 elements
+    if len(data) == 6:
+        date, time, store, item, cost, payment = data
+
+        current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+        current_time = datetime.datetime.now().strftime("%H:%M:%S")
+
+        print(f"{item}\t{cost}")
+
+print(f"Current Date: {current_date}, Current Time: {current_time}")
