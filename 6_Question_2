@@ -1,0 +1,16 @@
+from datetime import datetime, timedelta
+
+# Current datetime
+current_datetime = datetime.now()
+
+# + 1 day
+print("After adding 1 day:")
+print(current_datetime + timedelta(days=1))
+
+# - 60 seconds
+print("\nAfter subtracting 60 seconds:")
+print(current_datetime - timedelta(seconds=60))
+
+# + 2 years
+print("\nAfter adding 2 years:")
+print(current_datetime + timedelta(days=365 * 2))  # Adding 2 years, assuming non-leap year
